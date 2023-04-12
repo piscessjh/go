@@ -1,5 +1,4 @@
-package go 
-import "fmt" 
+package go
 func Jianfa (n1 int, n2 int) int {
 	var a int = 0
 	a += n1
