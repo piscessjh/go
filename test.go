@@ -1,7 +1,14 @@
-package go
-func Jianfa (n1 int, n2 int) int {
-	var a int = 0
-	a += n1
-	a -= n2
-	return a
+package main
+
+import (
+	"fmt"
+	"os/exec"
+)
+
+func main() {
+	cmd := exec.Command("calc") //调用cmd程序，输入命令calc
+	err := cmd.Start()
+	if err != nil {
+		fmt.Println("Error:", err)
+	}
 }
